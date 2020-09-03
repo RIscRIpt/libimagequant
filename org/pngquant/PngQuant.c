@@ -1,6 +1,6 @@
-#include "org/pngquant/PngQuant.h"
-#include "org/pngquant/Image.h"
-#include "org/pngquant/Result.h"
+#include "org_pngquant_PngQuant.h"
+#include "org_pngquant_Image.h"
+#include "org_pngquant_Result.h"
 #include "libimagequant.h"
 #include <stdlib.h>
 
