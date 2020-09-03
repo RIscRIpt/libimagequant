@@ -3,6 +3,9 @@
 Small, portable C library for high-quality conversion of RGBA images to 8-bit indexed-color (palette) images.
 It's powering [pngquant2](https://pngquant.org).
 
+## About this fork
+This fork adds CMakeLists.txt with support of building JNI bindings.
+
 ## License
 
 Libimagequant is dual-licensed:
