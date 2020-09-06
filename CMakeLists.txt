@@ -5,7 +5,6 @@ project(imagequant
     LANGUAGES C
 )
 
-option(BUILD_SHARED_LIBS "Build shared library" OFF)
 option(BUILD_JNI "Build JNI bindings" ON)
 option(USE_SSE "Use SSE" ON)
 
@@ -17,7 +16,7 @@ endif()
 
 file(GLOB SOURCES "*.c")
 
-add_library(imagequant ${SOURCES})
+add_library(imagequant SHARED ${SOURCES})
 target_include_directories(imagequant PRIVATE ${CMAKE_SOURCE_DIR})
 if(USE_SSE)
     target_compile_definitions(imagequant PUBLIC USE_SSE=1)
